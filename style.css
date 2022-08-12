@@ -1,0 +1,362 @@
+html  {
+  overflow-x: hidden;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+  background-color: black;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  background-size: cover;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  display: inline;
+}
+
+#header i {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  margin-left: 305px;
+  margin-top: 3.5px;
+  border: none;
+}
+#header {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  width: 85%;
+  margin-left : 100px;
+}
+#header .logo a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#header .logoname {
+  margin-left: -450px;
+  font-size: large;
+  color: rgb(228, 228, 228);
+}
+#header .nav {
+  margin-left: -100px;
+}
+
+.navbar {
+  padding-left: 450px;
+  padding-top: 0px;
+}
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.navbar li {
+  position: relative;
+}
+.navbar > ul > li {
+  position: relative;
+  margin: 0 12px;
+}
+.navbar a, .navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 3px;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.7);
+  white-space: nowrap;
+  transition: 0.3s;
+  position: relative;
+}
+.navbar a i, .navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+.navbar > ul > li > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #ffffff;
+  visibility: hidden;
+  width: 0px;
+  transition: all 0.3s ease-in-out 0s;
+}
+.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+  color: #fff;
+} 
+
+#hero {
+  width: 100%;
+  height: 120vh;
+  background: url("images/ele1.jpeg") top center;
+  background-size: cover;
+}
+
+#footer {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  bottom: 0;
+  position:absolute;
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+  width: 85%;
+  margin-bottom: -110px;
+  margin-left : 100px;
+}
+#footer p {
+  font-size: 15;
+  font-family: "Open Sans", sans-serif;
+  padding: 0;
+  width: 32%;
+  margin-left: 0px;
+  text-align: left;
+  margin-top: 40px;
+}
+.container-right {
+  font-size: 15;
+  padding: 0;
+  width: 30%;
+  margin-left: 800px;
+  margin-top: -50px;
+  text-align: right;
+}
+.slide2 {
+  display: inline;
+  font-size: smaller;
+  margin-right: 119px;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+  html,body{
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  #hero {
+    background: url("images/mobile.jpeg") top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #header {
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+    margin-left : 15px;
+  }
+  #header .logoname {
+    margin-left: -450px;
+  }
+  #header i {
+    margin-left: -260px;
+  }
+  #header .nav {
+    display: none;
+  }
+  #header .nav2 {
+    display: none;
+  }
+  #header .nav3 {
+    display: none;
+  }
+  #footer {
+    margin-bottom: -75px;
+    margin-left: -10px;
+    border-top: 1.5px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+  }
+  #footer p {
+    width: 80%;
+    margin-top: 10px;
+    margin-left: 45px;
+    text-align: center;
+    font-size: small;
+  }
+  #footer .slide2 {
+    font-size: x-small;
+    margin-right: 5px;
+  }
+  #footer .container-right {
+    margin-top: 20px;
+    margin-left: 110px;
+    margin-bottom: -50px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) AND (max-width: 768px) {
+  html,body{
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  #hero {
+    background: url("images/mobile.jpeg") top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #header .logoname {
+    margin-left: -520px;
+  }
+  #header i {
+    margin-left: 10px;
+  }
+  #header .nav {
+    margin-left: -390px;
+    font-size: 1rem;
+  }
+  #header .nav2 {
+    margin-left: -310px;
+    font-size: 1rem;
+  }
+  #header .nav3 {
+    margin-left: -160px;
+    font-size: 1rem;
+  }
+  #footer {
+    margin-bottom: -100px;
+    margin-left: 50px;
+  }
+  #footer p {
+    width: 80%;
+    margin-top: 30px;
+    margin-left: 65px;
+    text-align: center;
+    font-size: medium;
+  }
+  #footer .slide2 {
+    margin-right: 60px;
+    font-size: small;
+  }
+  #footer .container-right {
+    margin-top: 0px;
+    margin-left: 240px;
+    margin-bottom: -60px;
+  }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 769px) AND (max-width: 992px){
+  html,body{
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  #hero {
+    background: url("images/mobile.jpeg") top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #header i {
+    margin-left: 90px;
+  }
+  #header .logoname {
+    margin-left: -500px;
+  }
+  #header .nav {
+    margin-left: -370px;
+    font-size: 1.1rem;
+  }
+  #header .nav2 {
+    margin-left: -290px;
+    font-size: 1.1rem;
+  }
+  #header .nav3 {
+    margin-left: -140px;
+    font-size: 1.1rem;
+  }
+  #footer {
+    margin-bottom: -90px;
+  }
+  #footer p {
+    width: 60%;
+    margin-top: 15px;
+    margin-left: -12px;
+    text-align: left;
+    font-size: large;
+  }
+  #footer .container-right {
+    margin-top: -50px;
+    margin-left: 480px;
+    margin-bottom: 60px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) AND (max-width: 1200px) {
+  html,body{
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  #hero {
+    background: url("images/mobile.jpeg") top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #header i {
+    margin-left: 80px;
+  }
+  #header .logoname {
+    font-size: large;
+  }
+  #header .nav {
+    margin-left: -300px;
+    font-size: 1.2rem;
+  }
+  #header .nav2 {
+    margin-left: -180px;
+    font-size: 1.2rem;
+  }
+  #header .nav3 {
+    margin-left: -10px;
+    font-size: 1.2rem;
+  }
+  #footer {
+    margin-bottom: -110px;
+  }
+  #footer p {
+    width: 60%;
+    margin-top: 30px;
+    margin-left: 22px;
+    text-align: left;
+    font-size: large;
+  }
+  #footer .container-right {
+    margin-top: -50px;
+    margin-left: 550px;
+    margin-bottom: -60px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  html,body{
+    overflow-x: hidden;
+  }
+}
+
+/* Extra large devices (large desktops, 1366px and up) */
+@media (min-width: 1366px) {
+  html,body{
+    overflow-x: hidden;
+  }
+}
+
+/* Extra large devices (large desktops, 1500px and up) */
+@media (min-width: 1500px) {
+  html,body{
+    overflow-x: hidden;
+  }
+}
+
+/* Extra large devices (large desktops, 2560px and up) */
+@media (min-width: 2560px) {
+  html,body{
+    overflow-x: hidden;
+  }
+}
